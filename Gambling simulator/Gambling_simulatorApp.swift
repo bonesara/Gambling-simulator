@@ -11,7 +11,7 @@ import SwiftUI
 struct Gambling_simulatorApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            IntroView()
         }
     }
 }
