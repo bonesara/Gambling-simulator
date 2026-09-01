@@ -18,9 +18,12 @@ struct ContentView: View {
                 .foregroundStyle(.tint)
                 .font(.system(size: 100))
             // type amount to gamble
+            Text("How much do you want to gamble?")
+                .font(.system(size: 22))
+                .padding()
             TextField("Type something here...", value: $gambleAmount, format: .number)
                 .textFieldStyle(.roundedBorder)
-                .padding()
+                .font(.system(size: 30))
             // Gamble code
             Button("Gamble 🎲") {
                 //if not enough money
