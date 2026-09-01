@@ -49,7 +49,7 @@ struct ContentView: View {
             Text("Money:")
                 .font(.system(size: 30))
                 .foregroundStyle(Color(red: 0.95, green: 0.77, blue: 0.06))
-            Text("$\(String(format: "%.2f", Money))")
+            Text("$\(String(format: "%.2f", Money))💰")
                 .font(.system(size: 40))
                 .foregroundStyle(Color(red: 0.95, green: 0.77, blue: 0.06))
         }
