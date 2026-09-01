@@ -20,6 +20,7 @@ struct ContentView: View {
                         .foregroundStyle(.tint)
                         .font(.system(size: 100))
                     // type amount to gamble
+                    Text("   Let's see the luck you've giat")
                     Text("How much do you want to gamble?")
                         .font(.system(size: 22))
                         .padding()

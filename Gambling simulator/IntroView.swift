@@ -14,6 +14,10 @@ struct IntroView: View {
     
     var body: some View {
             VStack(spacing: 24){
+                Text("Welcome")
+                    .font(.largeTitle)
+                    .bold()
+                Spacer()
                 Image(systemName: "die.face.5")
                     .scaledToFill()
                     .frame(width: 100, height: 100)
@@ -21,14 +25,20 @@ struct IntroView: View {
                     .scaleEffect(scale)
                     .animation(.easeInOut(duration: 1), value: scale)
                 Text("WARM WELCOME TO GAMBLING SIMULATOR")
-                Text("Time to  put your money")
+                    .bold()
+                Text("Time to put in your money!")
+                    .bold()
                 Button{
                     showLaunch = true
                 } label: {
                     Text("So Lock In 🔏")
-                        .foregroundColor(.green)
+                        .bold()
+                        .foregroundColor(Color(red: 0.0, green: 0.4, blue: 0.0))
+                        .font(.title)
                 }
-                .navigationTitle("Helllllloooooo Customer!")
+                .background(Color(red: 0.95, green: 0.77, blue: 0.06))
+                .clipShape(.rect(cornerRadius: 10))
+                Spacer()
             }
             .onAppear {
                 scale = 1.5
